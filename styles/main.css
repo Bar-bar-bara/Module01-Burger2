@@ -26,6 +26,9 @@ a {
 
 /*Header*/
 .header {
+    border-bottom: 1px solid #DEDEDE;
+}
+.header-wrapper {
     display: flex;
     align-items: center;
     gap: 196px; /*сейчас на макете отображается 198.3*/
@@ -142,6 +145,6 @@ a {
     max-width: 320px;
     margin: 0 auto;
     color: rgba(var(--light-rgb), .8);
-    font-size: 15px
+    font-size: 15px;
     line-hight: 160%;    
 }
