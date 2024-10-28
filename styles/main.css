@@ -328,3 +328,80 @@ a {
     background-size: contain;
 
 }
+
+/*Footer*/
+.footer {
+    margin-top: 140px;
+    background-color: #1E2F40;
+    padding-top: 111px;
+    padding-bottom: 120px;
+
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 111px;
+
+
+}
+.footer-logo {
+    display: block;
+    width: 63px;
+    height: 56px;
+    background-image: url(../images/logo-light.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer-title {
+    font-family: var(--nunito-sans);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 190%;
+    text-transform: uppercase;
+    color: var(--light);
+    margin-top: 0;
+    margin-bottom: 12px;
+    }
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+}
+.footer-link {
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--line);  
+}
+
+.footer-list span {
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+}
+.footer-list {
+    list-style-type: none;
+    font-family: var(--open-sans);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--light);
+    margin: 0;
+    padding-left: 0;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+.footer-tel {
+    font-family: var(--nunito-sans);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 190%;
+    text-transform: uppercase;
+    color: var(--accent-light);
+}
+
