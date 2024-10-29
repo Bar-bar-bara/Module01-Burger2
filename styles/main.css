@@ -9,6 +9,7 @@
     --light-rgb: 255, 255, 255;
     --line: #DEDEDE;
     --menu:#1B2A49;
+    --tr:0.2s;
 
 }
 body {
@@ -215,6 +216,10 @@ a {
     border-radius: 5px;
     padding: 20px 25px;
     border: none;
+    transition: var(--tr);
+}
+.banner-btn:hover{
+    background-color: var(--accent-dark);
 }
 
 /*Menu*/
@@ -316,7 +321,11 @@ a {
     background-color: var(--accent-light);     
     border: none;
     border-radius: 5px;
-    padding: 11px 32px;  
+    padding: 11px 32px;
+    transition: var(--tr);  
+}
+.menu-btn:hover{
+    background-color: var(--accent-dark);
 }
 .menu-btn::before {
     content: '';
@@ -373,7 +382,15 @@ a {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: var(--line);  
+    color: var(--line);
+    transition: var(--tr);  
+}
+.footer-link:hover{
+    color: var(--accent-light);
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-list span {
@@ -392,9 +409,8 @@ a {
     margin: 0;
     padding-left: 0;
 }
-.footer-item {
-    display: flex;
-    flex-direction: column;
+.footer-list-item:not(:last-child){
+    margin-bottom: 14px;
 }
 .footer-tel {
     font-family: var(--nunito-sans);
@@ -403,5 +419,9 @@ a {
     line-height: 190%;
     text-transform: uppercase;
     color: var(--accent-light);
+    transition: var(--tr);
 }
 
+.footer-tel:hover{
+    color: var(--accent-dark);
+}
