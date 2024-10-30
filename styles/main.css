@@ -100,6 +100,37 @@ a {
     left: 17px;
     bottom: 0;
 }
+.button-up{
+
+}
+.button-up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    font-family: var(--nunito-sans);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 129%;
+    color: #1E2F40;
+    background-color: var(--accent-light);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    transition: var(--tr);
+}
+.button-up:hover{
+    background-color: var(--accent-dark);
+}
+
+.button-up.hidden {
+    opacity: 0;
+}
+
+.button-up.visible {
+    opacity: 1;
+}
 
 /*Hero*/
 .hero {
@@ -215,6 +246,9 @@ a {
 }
 
 .banner-btn {
+    display: block;
+    max-width: 170px;
+    text-align: center;
     font-family: var(--nunito-sans);
     font-size: 14px;
     text-transform: uppercase;
@@ -223,7 +257,7 @@ a {
     color: #1E2F40;
     background-color: var(--accent-light);
     border-radius: 5px;
-    padding: 20px 25px;
+    padding: 20px 0;
     border: none;
     transition: var(--tr);
 }
