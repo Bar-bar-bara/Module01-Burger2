@@ -146,7 +146,7 @@ a {
 
 /*Hero*/
 .hero {
-    background-image: url(../images/hero.jpg);
+    background-image: url(../images/hero.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -155,7 +155,7 @@ a {
     padding-bottom: 142px;
 }
 .hero-contact{
-    background-image: url(../images/hero-contact.jpg);
+    background-image: url(../images/hero-contact.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -212,7 +212,7 @@ a {
     }
 
 .banner-wrapper {
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
