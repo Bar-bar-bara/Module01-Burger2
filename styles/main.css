@@ -588,7 +588,18 @@ display: none;
     color: var(--accent-light);
 }
 
+.nav._modal {
+    display: none;
+}
+
+.modal-close {
+    display: none;
+}
+
+
 /* Media */
+
+
 @media (max-width: 1080px) {
     .header-wrapper {
         gap: 40px;
@@ -738,12 +749,95 @@ display: none;
         }
     .banner-description {
         max-width: 222px;
-        font-size: 14px;  
+        font-size: 14px;
+        margin-bottom: 20px;  
     }
     .banner-wrapper {
         padding-top: 35px;
         padding-bottom: 34px;
         padding-left: 17px;
-        padding-right: 0;
+        padding-right: 15;
+    }
+    .banner-btn {
+        max-width: 198px;
+    }
+
+    .menu-header {
+        margin-top: 58px;
+        margin-bottom: 30px;
+    }
+    .menu-title {
+        font-size: 27px;
+    }
+    .select {
+        font-size: 12px;
+        flex-basis: 136px;
+        width: 136px;
+        padding: 13px 15px;
+        background-position: 93% center;
+    }
+
+    .menu-box {
+        gap: 24px 20px;
+    }
+
+    .menu-thumb {
+        margin-bottom: 10px;
+        height: 50vw;
+    }
+    .menu-item._ad .menu-thumb {
+        height: 30vw;
+    }
+    .menu-name {        
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    .menu-price {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    .menu-btn {
+        padding: 11px 22px;
+    }
+
+    .footer {
+        margin-top: 80px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 35px;
+        position: relative;
+    }
+
+    .footer-logo {
+        margin-bottom: 9px;
+    }
+
+    .footer-tel._mobile {
+        position: absolute;
+        top: -13px;
+        right: 0;
+    }
+    .footer-tel._mobile + .footer-tel._mobile {
+        top: 25px;
+    }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-nav {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:450px) {
+    .menu-item._ad .menu-thumb {
+        flex-basis: calc(100% - 130px -20px);
+        height: 38vw;
+    }
+    .menu-item._ad .menu-info {
+        flex-basis: 130px;
     }
 }
